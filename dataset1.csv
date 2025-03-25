@@ -1,0 +1,591 @@
+State ,Region ,Plant variety ,Apple variety,Age ,time span for plant to bear the fruit first time,temperature,humidity,rainy season,rain level,soil type,ph,apple yeild in first season
+Jammu and Kashmir,Kupwara,M9 T336,Gala,15,2.5,21,30,March - May,Very high ,Loamy soil,6.6,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,14,3,30,35,March - May,high ,Loamy soil,6.5,3
+Jammu and Kashmir,Kupwara,M9 T338,Gala,16,3.1,31,35,March - May,medium,Loamy soil,6.9,3.3
+Jammu and Kashmir,Kupwara,M9 T339,Gala,17,3.4,32,36,March - May,Very high ,Loamy soil,7,3.5
+Jammu and Kashmir,Kupwara,M9 T340,Gala,18,2.8,23,37,March - May,high ,Loamy soil,7.1,3.6
+Jammu and Kashmir,Kupwara,M9 T341,Gala,19,2.9,23,40,March - May,medium,Loamy soil,5.6,4
+Jammu and Kashmir,Kupwara,M9 T342,Gala,14,3,30,42,March - May,high ,Loamy soil,6,5
+Jammu and Kashmir,Kupwara,M9 T343,Gala,14,2.6,30,41,March - May,medium,Loamy soil,6,5.5
+Jammu and Kashmir,Kupwara,M9 T344,Gala,15,2.5,30,45,March - May,high ,Loamy soil,6,4.5
+Jammu and Kashmir,Kupwara,M9 T345,Gala,16,2.4,30,46,March - May,Very high ,Loamy soil,6,4.1
+Jammu and Kashmir,Kupwara,M9 T346,Gala,17,2.5,28,50,March - May,medium,Loamy soil,6.1,3.1
+Jammu and Kashmir,Kupwara,M9 T347,Gala,17,2.6,27,40,March - May,Very high ,Loamy soil,6.2,3.7
+Jammu and Kashmir,Kupwara,M9 T348,Gala,18,2.6,27,30,March - May,high ,Loamy soil,6.3,3.8
+Jammu and Kashmir,Kupwara,M9 T349,Gala,19,2.6,27,45,March - May,Very high ,Loamy soil,6.4,4
+Jammu and Kashmir,Kupwara,M9 T350,Gala,19,2.7,27,48,March - May,high ,Loamy soil,6,4.8
+Jammu and Kashmir,Kupwara,M9 T351,Gala,18,2.7,26,46,March - May,medium,Loamy soil,5.9,4.6
+Jammu and Kashmir,Kupwara,M9 T352,Gala,22,2.7,25,50,March - May,high ,Loamy soil,7,4.5
+Jammu and Kashmir,Kupwara,M9 T353,Gala,23,2.5,25,50,March - May,Very high ,Loamy soil,7.1,3
+Jammu and Kashmir,Kupwara,M9 T354,Gala,24,2.3,26,55,March - May,medium,Loamy soil,7.2,4.1
+Jammu and Kashmir,Kupwara,M9 T355,Gala,24,2.9,29,53,March - May,Very high ,Loamy soil,6.9,4
+Jammu and Kashmir,Kupwara,M9 T356,Gala,23,3.4,31,51,March - May,high ,Loamy soil,6.8,5.6
+Jammu and Kashmir,Kupwara,M9 T357,Gala,23,3.4,31,52,March - May,Very high ,Loamy soil,6.7,5
+Jammu and Kashmir,Kupwara,M9 T358,Gala,21,3.3,31,50,March - May,high ,Loamy soil,6,5.9
+Jammu and Kashmir,Kupwara,M9 T359,Gala,21,3,32,46,March - May,medium,Loamy soil,6,5
+Jammu and Kashmir,Kupwara,M9 T360,Gala,21,3,30,48,March - May,high ,Loamy soil,6.1,3
+Jammu and Kashmir,Kupwara,M9 T361,Gala,17,3,29,47,March - May,medium,Loamy soil,6.2,2.9
+Jammu and Kashmir,Kupwara,M9 T362,Gala,25,3,30,42,March - May,high ,Loamy soil,6.3,3
+Jammu and Kashmir,Kupwara,M9 T363,Gala,26,3,31,40,March - May,Very high ,Loamy soil,6.4,3.5
+Jammu and Kashmir,Kupwara,M9 T364,Gala,24,3,32,45,March - May,medium,Loamy soil,6.5,3.6
+Jammu and Kashmir,Kupwara,M9 T365,Gala,20,3.1,32,46,March - May,Very high ,Loamy soil,6.1,4.1
+Jammu and Kashmir,Kupwara,M9 T366,Gala,21,3,32,43,March - May,high ,Loamy soil,6.1,4.2
+Jammu and Kashmir,Kupwara,M9 T367,Gala,22,3.2,31,50,March - May,Very high ,Loamy soil,6.3,4.3
+Jammu and Kashmir,Kupwara,M9 T368,Gala,215,3.3,30,55,March - May,high ,Loamy soil,6.4,5
+Jammu and Kashmir,Kupwara,M9 T369,Gala,22,3.4,29,56,March - May,Very high ,Loamy soil,6.5,5.1
+Jammu and Kashmir,Kupwara,M9 T370,Gala,15,3.2,28,51,March - May,medium,Loamy soil,6,5.2
+Jammu and Kashmir,Kupwara,M9 T371,Gala,23,3,27,52,March - May,Very high ,Loamy soil,6.7,3.1
+Jammu and Kashmir,Kupwara,M9 T372,Gala,24,3,26,30,March - May,medium,Loamy soil,6.7,3.2
+Jammu and Kashmir,Kupwara,M9 T373,Gala,17,3,25,35,March - May,Very high ,Loamy soil,6.7,3.3
+Jammu and Kashmir,Kupwara,M9 T374,Gala,19,3,22,34,March - May,high ,Loamy soil,6.8,3.9
+Jammu and Kashmir,Kupwara,M9 T377,Gala,18,3,22,35,March - May,medium,Loamy soil,7,3.8
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,30,5,24,36,March - May,Very high ,Loamy soil,6.5,0.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,30,5,24,38,March - May,high ,Loamy soil,6,0.8
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,31,5.1,24,37,March - May,medium,Loamy soil,6.5,0.9
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,32,5.2,25,34,March - May,Very high ,Loamy soil,6.5,0.9
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,39,5.3,26,38,March - May,high ,Loamy soil,6.5,0.9
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,38,5.4,25,39,March - May,medium,Loamy soil,6.6,1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,40,5.5,24,34,March - May,high ,Loamy soil,6.8,1.2
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5.6,24,35,March - May,medium,Loamy soil,7.3,1.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5.7,26,30,March - May,high ,Loamy soil,7,1.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,33,5.8,26,32,March - May,Very high ,Loamy soil,7,0.8
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,37,5.9,19,30,March - May,medium,Loamy soil,7,0.6
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,6,24,35,March - May,Very high ,Loamy soil,7,0.7
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,5,25,40,March - May,high ,Loamy soil,7.2,0.8
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,7,26,45,March - May,medium,Loamy soil,7.1,1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,7.5,26,48,March - May,Very high ,Loamy soil,7.1,1.2
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,6.5,27,46,March - May,high ,Loamy soil,6.9,1.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,6.6,28,50,March - May,medium,Loamy soil,6.8,1.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,37,6.7,29,55,March - May,high ,Loamy soil,6.6,0.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,33,6.8,30,52,March - May,medium,Loamy soil,6.5,0.6
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,32,6.4,31,51,March - May,high ,Loamy soil,6,0.7
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,38,6.3,32,42,March - May,Very high ,Loamy soil,7,0.8
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,31,6.2,31,46,March - May,medium,Loamy soil,7,1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,39,6.1,31,50,March - May,Very high ,Loamy soil,7,1.2
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,30,6,31,40,March - May,high ,Loamy soil,7,1.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,30,5,30,30,March - May,medium,Loamy soil,6.9,1.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,6,30,35,March - May,Very high ,Loamy soil,6.5,2
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,7,19,32,March - May,high ,Loamy soil,6.5,3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,4,29,31,March - May,medium,Loamy soil,6.6,1.9
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5,30,33,March - May,high ,Loamy soil,6,2
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,6,24,36,March - May,medium,Loamy soil,6,1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,7,24,37,March - May,high ,Loamy soil,6.6,1.2
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5,25,33,March - May,Very high ,Loamy soil,6.7,1.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,6,26,31,March - May,medium,Loamy soil,6.9,1.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5.5,27,32,March - May,Very high ,Loamy soil,6.5,1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,6.5,28,33,March - May,high ,Loamy soil,6.4,1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,7.1,29,36,March - May,medium,Loamy soil,6.3,1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,6.9,30,35,March - May,Very high ,Loamy soil,6.8,1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,6.6,21,38,March - May,high ,Loamy soil,6.9,1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,6.4,21,55,March - May,medium,Loamy soil,6.7,1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,6.5,30,56,March - May,high ,Loamy soil,6.3,1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,20,2,26,54,March - May,high ,Loamy soil,6.7,5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,20,2,24,45,March - May,Very high ,Loamy soil,6.6,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,21,2,25,56,March - May,medium,Loamy soil,6.7,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,29,2,25,42,March - May,medium,Loamy soil,6.8,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,30,2,25,32,March - May,medium,Loamy soil,6.9,5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,3,26,30,March - May,medium,Loamy soil,7,6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,3,26,40,March - May,medium,Loamy soil,7.1,9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,3.5,27,37,March - May,medium,Loamy soil,7.2,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,23,2.5,27,34,March - May,medium,Loamy soil,7.3,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,27,2.7,27,38,March - May,medium,Loamy soil,7.4,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2.8,27,39,March - May,Very high ,Loamy soil,7,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,3,28,34,March - May,Very high ,Loamy soil,6.9,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,3,28,35,March - May,Very high ,Loamy soil,6.8,3.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,3.1,29,30,March - May,Very high ,Loamy soil,6.6,3.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,21,2.7,30,32,March - May,Very high ,Loamy soil,6.9,3.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,29,2.5,23,30,March - May,Very high ,Loamy soil,6,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,30,2.4,20,35,March - May,Very high ,Loamy soil,7,4.2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,21,2.4,19,40,March - May,Very high ,Loamy soil,6.8,4.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.4,15,45,March - May,Very high ,Loamy soil,6.9,5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2.4,14,48,March - May,high ,Loamy soil,7.1,2.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2.4,13,46,March - May,high ,Loamy soil,7.1,2.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.4,17,50,March - May,high ,Loamy soil,6.9,2.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2.4,18,55,March - May,high ,Loamy soil,6.8,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2,16,52,March - May,high ,Loamy soil,6.8,4.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2,19,51,March - May,high ,Loamy soil,6.6,4.8
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.6,19,40,March - May,high ,Loamy soil,6.7,5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.6,20,45,March - May,high ,Loamy soil,6.9,4.2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.6,20,42,March - May,high ,Loamy soil,6.8,4.3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.7,20,41,March - May,medium,Loamy soil,6.6,4.8
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2.8,19,38,March - May,high ,Loamy soil,6.9,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2,21,37,March - May,Very high ,Loamy soil,6.8,2.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2,21,34,March - May,medium,Loamy soil,6.7,2.8
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2,21,38,March - May,Very high ,Loamy soil,7,2.4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2,21,39,March - May,high ,Loamy soil,7.1,3.4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,23,2,22,34,March - May,medium,Loamy soil,7.2,3.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,27,2.2,23,35,March - May,high ,Loamy soil,7,3.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2.3,20,30,March - May,Very high ,Loamy soil,7,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2.5,19,32,March - May,medium,Loamy soil,7,4.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,3,20,30,March - May,Very high ,Loamy soil,6.4,4.1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,30,3,20,35,March - May,high ,Loamy soil,6.4,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,30,2,25,40,March - May,medium,Loamy soil,6.6,7
+Jammu and Kashmir,Kupwara,M9 T337,Gala,20,2,21,45,March - May,high ,Loamy soil,6.5,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,21,3,22,48,March - May,Very high ,Loamy soil,6.6,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,30,2,20,46,March - May,medium,Loamy soil,6.7,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,29,3,19,50,March - May,Very high ,Loamy soil,6.8,5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2,18,55,March - May,high ,Loamy soil,6.9,6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,3,22,52,March - May,medium,Loamy soil,7,5.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2,23,51,March - May,high ,Loamy soil,7.1,5.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,23,3,21,40,March - May,Very high ,Loamy soil,7.2,5.1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,27,2,23,42,March - May,medium,Loamy soil,7.3,4.1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,3,24,45,March - May,Very high ,Loamy soil,7.4,4.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,29,2,2,35,March - May,high ,Loamy soil,7.5,4.3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,21,3,22,31,March - May,medium,Loamy soil,6.5,4.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,30,2,20,38,March - May,high ,Loamy soil,6.6,4.7
+Jammu and Kashmir,Kupwara,M9 T337,Gala,20,3,20,37,March - May,Very high ,Loamy soil,6.7,4.8
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2,20,34,March - May,medium,Loamy soil,6.8,4.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,3,20,38,March - May,Very high ,Loamy soil,6.9,4.2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2,19,39,March - May,high ,Loamy soil,7,4.1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,3,15,34,March - May,medium,Loamy soil,7.1,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2,25,35,March - May,high ,Loamy soil,7.2,3.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,3,26,30,March - May,Very high ,Loamy soil,7.3,3.4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,27,2,26,32,March - May,medium,Loamy soil,7.4,3.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,23,3,30,30,March - May,Very high ,Loamy soil,6,3.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2,31,35,March - May,high ,Loamy soil,5.8,2.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,3,32,40,March - May,medium,Loamy soil,6.6,2.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2,35,45,March - May,high ,Loamy soil,6.7,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2.5,33,48,March - May,Very high ,Loamy soil,6.8,4.1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,27,2.5,22,46,March - May,medium,Loamy soil,6.9,4.2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,23,3.5,32,50,March - May,Very high ,Loamy soil,7,4.3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.7,23,55,March - May,high ,Loamy soil,6,5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.8,25,52,March - May,medium,Loamy soil,6.1,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,3.1,26,51,March - May,high ,Loamy soil,5.8,3.1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.6,27,40,March - May,Very high ,Loamy soil,5.4,3.2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.5,27,45,March - May,medium,Loamy soil,6.2,5.1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2.7,28,42,March - May,Very high ,Loamy soil,6.3,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2.8,24,30,March - May,high ,Loamy soil,6,5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2.1,25,35,March - May,high ,Loamy soil,6.7,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2,26,38,March - May,medium ,Loamy soil,6.5,4.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2.1,23,53,March - May,medium ,Loamy soil,6,4.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2.1,24,31,March - May,medium ,Loamy soil,6.8,4.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5,25,51,March - May,medium,Loamy soil,6.7,3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5,21,50,March - May,medium,Loamy soil,6.1,3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,4,17,46,March - May,medium,Loamy soil,5.8,3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,6,15,48,March - May,medium,Loamy soil,5.4,3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,6,14,42,March - May,medium,Loamy soil,6.2,5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,6,13,40,March - May,medium,Loamy soil,6.3,5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,6,12,37,March - May,medium,Loamy soil,6,5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,6,11,34,March - May,Very high ,Loamy soil,6.7,6
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,6,28,38,March - May,Very high ,Loamy soil,6.5,4
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,6,29,39,March - May,Very high ,Loamy soil,6,4
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,33,6,30,34,March - May,Very high ,Loamy soil,6.8,4
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,37,6,31,35,March - May,Very high ,Loamy soil,7.1,4.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,6,36,30,March - May,Very high ,Loamy soil,7.2,4.3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,6,35,32,March - May,Very high ,Loamy soil,7.3,3.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,32,6,34,30,March - May,high ,Loamy soil,7.4,3.9
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,38,6,32,35,March - May,high ,Loamy soil,6,3.8
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,31,6,33,40,March - May,high ,Loamy soil,5.8,3.3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,39,6,30,45,March - May,high ,Loamy soil,6.6,4.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,30,6,30,48,March - May,high ,Loamy soil,6.7,4.2
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,30,5,29,46,March - May,high ,Loamy soil,6.8,4.6
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,30,5,24,50,March - May,high ,Loamy soil,6.9,4.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,40,5,19,55,March - May,Very high ,Loamy soil,7,4.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,40,5,16,52,March - May,high ,Loamy soil,7,4.6
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5,24,51,March - May,Very high ,Loamy soil,7,4.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,5,25,45,March - May,high ,Loamy soil,7,4.3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,5,26,35,March - May,Very high ,Loamy soil,6,4.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5,25,31,March - May,medium,Loamy soil,6,4.6
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,5,25,38,March - May,medium,Loamy soil,6,4.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,5,26,37,March - May,high ,Loamy soil,6,4.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5.5,26,34,March - May,high ,Loamy soil,6,4.1
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,5.5,23,38,March - May,medium,Loamy soil,5.7,4.2
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,5.5,17,39,March - May,medium,Loamy soil,5.6,4.6
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5.5,18,34,March - May,medium,Loamy soil,6.5,4.3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,33,5.4,24,35,March - May,high ,Loamy soil,6.6,3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,37,5.4,25,30,March - May,high ,Loamy soil,6.4,3.3
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5.3,24,32,March - May,medium,Loamy soil,6.7,3.5
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,34,5.2,22,30,March - May,medium,Loamy soil,6.8,3.6
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,36,5.3,12,35,March - May,high ,Loamy soil,5.9,3.9
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5.6,14,40,March - May,Very high ,Loamy soil,5.5,3.8
+Jammu and Kashmir,Kupwara,Traditional Plant ,Kullu,35,5.4,20,45,March - May,Very high ,Loamy soil,6,3.4
+Jammu and kashmir,Kupwara,M9 T337,Gala,25,2,28,48,March - May,Very high ,Loamy soil,6.5,5
+Jammu and kashmir,Kupwara,M9 T337,Gala,21,2,25,38,March - May,Very high ,Loamy soil,7.1,2
+Jammu and kashmir,Kupwara,M9 T337,Gala,22,3,26,37,March - May,Very high ,Loamy soil,7.2,3
+Jammu and kashmir,Kupwara,M9 T337,Gala,23,2,25,34,March - May,Very high ,Loamy soil,7.3,2.9
+Jammu and kashmir,Kupwara,M9 T337,Gala,24,3,25,38,March - May,Very high ,Loamy soil,7.4,5
+Jammu and kashmir,Kupwara,M9 T337,Gala,25,2.5,26,39,March - May,Very high ,Loamy soil,6,5.6
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,2.3,26,34,March - May,Very high ,Loamy soil,5.8,5.7
+Jammu and kashmir,Kupwara,M9 T337,Gala,27,2.4,23,35,March - May,high ,Loamy soil,6.6,3.5
+Jammu and kashmir,Kupwara,M9 T337,Gala,28,2.4,17,30,March - May,high ,Loamy soil,6.7,2.1
+Jammu and kashmir,Kupwara,M9 T337,Gala,29,2.3,18,32,March - May,high ,Loamy soil,6.8,2.9
+Jammu and kashmir,Kupwara,M9 T337,Gala,30,2.1,24,30,March - May,high ,Loamy soil,6.9,3.1
+Jammu and kashmir,Kupwara,M9 T337,Gala,20,2.6,25,35,March - May,high ,Loamy soil,7,3.2
+Jammu and kashmir,Kupwara,M9 T337,Gala,25,2.7,24,40,March - May,high ,Loamy soil,6,2.8
+Jammu and kashmir,Kupwara,M9 T337,Gala,24,2.5,22,45,March - May,high ,Loamy soil,6.1,2.9
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,2.6,12,48,March - May,high ,Loamy soil,5.8,3
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,2.8,14,46,March - May,medium,Loamy soil,5.4,3.1
+Jammu and kashmir,Kupwara,M9 T337,Gala,24,2.9,20,50,March - May,medium,Loamy soil,6,3.2
+Jammu and kashmir,Kupwara,M9 T337,Gala,25,2,29,55,March - May,medium,Loamy soil,6,4
+Jammu and kashmir,Kupwara,M9 T337,Gala,25,2.3,30,52,March - May,medium,Loamy soil,6,3.6
+Jammu and kashmir,Kupwara,M9 T337,Gala,25,2.1,31,51,March - May,medium,Loamy soil,6,3.5
+Jammu and kashmir,Kupwara,M9 T337,Gala,24,2.1,34,45,March - May,medium,Loamy soil,6.7,3.8
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,2.3,35,35,March - May,medium,Loamy soil,6.5,3.9
+Jammu and kashmir,Kupwara,M9 T337,Gala,23,2.2,36,31,March - May,medium,Loamy soil,6.2,3.4
+Jammu and kashmir,Kupwara,M9 T337,Gala,27,2.3,33,38,March - May,Very high ,Loamy soil,5.7,3
+Jammu and kashmir,Kupwara,M9 T337,Gala,25,2.1,32,37,March - May,Very high ,Loamy soil,7,2.9
+Jammu and kashmir,Kupwara,M9 T337,Gala,25,2.2,31,34,March - May,Very high ,Loamy soil,7.1,2.6
+Jammu and kashmir,Kupwara,M9 T337,Gala,24,2,30,38,March - May,Very high ,Loamy soil,6.7,2
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,2,29,39,March - May,Very high ,Loamy soil,6.5,2.5
+Jammu and kashmir,Kupwara,M9 T337,Gala,24,2,29,34,March - May,Very high ,Loamy soil,6.5,1
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,2,28,35,March - May,Very high ,Loamy soil,6.5,2
+Jammu and kashmir,Kupwara,M9 T337,Gala,25,2,29,30,March - May,high,Loamy soil,6.9,3
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,3,25,32,March - May,high,Loamy soil,7,4
+Jammu and kashmir,Kupwara,M9 T337,Gala,27,3,23,30,March - May,high,Loamy soil,5.8,2
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,3,21,35,March - May,high,Loamy soil,6.8,3.5
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,3,23,40,March - May,high,Loamy soil,6,2.7
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,3,24,45,March - May,high,Loamy soil,6,2.4
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,3,25,48,March - May,high,Loamy soil,6,4.1
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,3,26,30,March - May,high,Loamy soil,6,3.8
+Jammu and kashmir,Kupwara,M9 T337,Gala,26,3,15,32,March - May,high,Loamy soil,6.3,3.7
+Jammu and kashmir,Kupwara,M9 T337,Gala,25,2,20,30,March - May,high,Loamy soil,6.4,3.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,30,2,26,35,March - May,high ,Loamy soil,7,2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,20,2.4,24,40,March - May,Very high ,Loamy soil,7,2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,30,2.3,25,45,March - May,high ,Loamy soil,5.8,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,21,2.1,26,48,March - May,Very high ,Loamy soil,6.8,2.1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,22,2.6,27,46,March - May,high ,Loamy soil,6,2.2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,28,2.7,28,50,March - May,Very high ,Loamy soil,6,2.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,29,2.5,29,55,March - May,high ,Loamy soil,6,1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,23,2.6,30,52,March - May,Very high ,Loamy soil,6,1.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,27,2.8,31,51,March - May,high ,Loamy soil,6.3,1.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2.9,32,45,March - May,Very high ,Loamy soil,6.4,1.8
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2,33,35,March - May,high ,Loamy soil,5.6,2.1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2,34,31,March - May,Very high ,Loamy soil,5.7,2.2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2,35,38,March - May,high ,Loamy soil,5.8,2.3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2,21,37,March - May,Very high ,Loamy soil,6.1,2.4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2,22,34,March - May,high ,Loamy soil,6.2,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2,23,38,March - May,Very high ,Loamy soil,6.3,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2,23,39,March - May,high ,Loamy soil,6,1.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.4,23,34,March - May,Very high ,Loamy soil,6,1.8
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2.3,22,35,March - May,high ,Loamy soil,6,1.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2.1,23,30,March - May,Very high ,Loamy soil,6,1.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.6,24,32,March - May,high ,Loamy soil,6,2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,23,2.7,25,30,March - May,Very high ,Loamy soil,7,2.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,27,2.5,25,35,March - May,high ,Loamy soil,7,2.9
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,2.6,26,40,March - May,Very high ,Loamy soil,7,2.4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,2.8,24,45,March - May,high ,Loamy soil,7,2.1
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2.9,25,48,March - May,Very high ,Loamy soil,6.5,2
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2,26,34,March - May,high ,Loamy soil,6.5,3
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,2,26,38,March - May,Very high ,Loamy soil,6.5,2.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,23,2,23,39,March - May,medium,Loamy soil,6.8,5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,3,22,34,March - May,medium,Loamy soil,6,5.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,26,3,21,35,March - May,medium,Loamy soil,6.8,5.8
+Jammu and Kashmir,Kupwara,M9 T337,Gala,27,3,20,30,March - May,medium,Loamy soil,5.8,6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,3,23,32,March - May,medium,Loamy soil,5.9,4
+Jammu and Kashmir,Kupwara,M9 T337,Gala,25,3,24,30,March - May,medium,Loamy soil,5.6,4.6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,24,3,25,35,March - May,high ,Loamy soil,5.7,5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,23,3,26,40,March - May,Very high ,Loamy soil,6,6
+Jammu and Kashmir,Kupwara,M9 T337,Gala,27,3,26,45,March - May,high ,Loamy soil,6.1,7
+Jammu and Kashmir,Kupwara,M9 T337,Gala,28,3,25,48,March - May,Very high ,Loamy soil,6.2,7.8
+Jammu and Kashmir,Kupwara,M9 T337,Gala,29,2,24,46,March - May,medium,Loamy soil,7,6.5
+Jammu and Kashmir,Kupwara,M9 T337,Gala,30,2,23,50,March - May,medium,Loamy soil,6.5,4
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5,21,55,March - May,medium ,Loamy soil,6,20
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5.1,22,52,March - May,medium ,Loamy soil,5.7,20
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5.2,23,51,March - May,medium ,Loamy soil,5.6,19
+Kashmir,Anantang,Traditional Plant ,Maharajee,14,5.3,24,30,March - May,medium ,Loamy soil,5.5,12
+Kashmir,Anantang,Traditional Plant ,Maharajee,16,5.4,25,35,March - May,medium ,Loamy soil,5.8,13
+Kashmir,Anantang,Traditional Plant ,Maharajee,16,5,26,35,March - May,medium ,Loamy soil,6,12
+Kashmir,Anantang,Traditional Plant ,Maharajee,14,5,25,36,March - May,medium ,Loamy soil,6.1,14
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5.2,24,37,March - May,medium ,Loamy soil,6,15
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5.3,23,40,March - May,medium ,Loamy soil,6,16
+Kashmir,Anantang,Traditional Plant ,Maharajee,14,5.6,23,42,March - May,medium ,Loamy soil,6.1,10
+Kashmir,Anantang,Traditional Plant ,Maharajee,16,6,21,41,March - May,medium ,Loamy soil,6,11
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,6,22,45,March - May,high,Loamy soil,6.2,18
+Kashmir,Anantang,Traditional Plant ,Maharajee,14,6,20,46,March - May,high,Loamy soil,6,19
+Kashmir,Anantang,Traditional Plant ,Maharajee,16,4,25,50,March - May,high,Loamy soil,6.3,17
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,4,15,40,March - May,high,Loamy soil,6,9
+Kashmir,Anantang,Traditional Plant ,Maharajee,14,4.5,15,30,March - May,high,Loamy soil,6.4,5
+Kashmir,Anantang,Traditional Plant ,Maharajee,16,6,16,45,March - May,high,Loamy soil,6.5,6
+Kashmir,Anantang,Traditional Plant ,Maharajee,14,5,18,48,March - May,high,Loamy soil,6.6,19
+Kashmir,Anantang,Traditional Plant ,Maharajee,16,5,19,46,March - May,high,Loamy soil,6.7,15
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5,14,50,March - May,high,Loamy soil,7,16
+Kashmir,Anantang,Traditional Plant ,Maharajee,13,5,19,50,March - May,high,Loamy soil,5.8,14
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5,21,55,March - May,high,Loamy soil,6,17
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5,22,32,March - May,high,Loamy soil,6,18
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,6,23,30,March - May,Very high,Loamy soil,6,16
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,6,24,35,March - May,Very high,Loamy soil,6,17
+Kashmir,Anantang,Traditional Plant ,Maharajee,14,6,25,40,March - May,Very high,Loamy soil,6,24
+Kashmir,Anantang,Traditional Plant ,Maharajee,16,6,25,45,March - May,Very high,Loamy soil,6,17
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,6,24,48,March - May,Very high,Loamy soil,6,20
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,6,24,46,March - May,high,Loamy soil,6.7,21
+Kashmir,Anantang,Traditional Plant ,Maharajee,14,5,23,50,March - May,high,Loamy soil,6.8,23
+Kashmir,Anantang,Traditional Plant ,Maharajee,16,5,22,55,March - May,high,Loamy soil,6.5,24
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5,21,52,March - May,high,Loamy soil,6.4,24
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5,24,51,March - May,high,Loamy soil,6,23
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5,25,30,March - May,Very high,Loamy soil,6.5,22
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5,28,35,March - May,medium ,Loamy soil,6,21
+Kashmir,Anantang,Traditional Plant ,Maharajee,14,5.5,29,35,March - May,medium ,Loamy soil,6.1,22
+Kashmir,Anantang,Traditional Plant ,Maharajee,13,5.5,20,36,March - May,medium ,Loamy soil,6,20
+Kashmir,Anantang,Traditional Plant ,Maharajee,15,5.5,21,37,March - May,high,Loamy soil,6.2,20
+Kashmir,Anantang,Traditional Plant ,Maharajee,16,5.5,20,40,March - May,high,Loamy soil,6.1,20
+Kashmir,Anantang,Traditional Plant ,Maharajee,17,5,20,42,March - May,medium ,Loamy soil,6.2,20
+Kashmir,Anantang,Traditional Plant ,Gala,15,5,20,41,March - May,medium ,Loamy soil,6,14
+Kashmir,Anantang,Traditional Plant ,Gala,16,5,20,45,March - May,Very high,Loamy soil,6,15
+Kashmir,Anantang,Traditional Plant ,Gala,15,5,21,46,March - May,medium ,Loamy soil,7,14
+Kashmir,Anantang,Traditional Plant ,Gala,14,5.1,22,50,March - May,medium ,Loamy soil,7,16
+Kashmir,Anantang,Traditional Plant ,Gala,15,5.2,23,40,March - May,medium ,Loamy soil,6.5,13
+Kashmir,Anantang,Traditional Plant ,Gala,15,5.3,24,30,March - May,high,Loamy soil,7,17
+Kashmir,Anantang,Traditional Plant ,Gala,16,5.4,25,45,March - May,high,Loamy soil,6,18
+Kashmir,Anantang,Traditional Plant ,Gala,14,5,26,48,March - May,medium ,Loamy soil,6.5,19
+Kashmir,Anantang,Traditional Plant ,Gala,16,5,21,46,March - May,high,Loamy soil,6,20
+Kashmir,Anantang,Traditional Plant ,Gala,17,5.2,23,50,March - May,high,Loamy soil,6,13
+Kashmir,Anantang,Traditional Plant ,Gala,18,5.3,20,50,March - May,high,Loamy soil,6.5,14
+Kashmir,Anantang,Traditional Plant ,Gala,17,5.6,19,55,March - May,high,Loamy soil,6,15
+Kashmir,Anantang,Traditional Plant ,Gala,16,5,18,30,March - May,medium ,Loamy soil,6.1,15
+Kashmir,Anantang,Traditional Plant ,Gala,16,5,17,35,March - May,medium ,Loamy soil,6.2,15
+Kashmir,Anantang,Traditional Plant ,Gala,15,5,16,30,March - May,medium ,Loamy soil,6.3,16
+Kashmir,Anantang,Traditional Plant ,Gala,15,5,15,32,March - May,high,Loamy soil,7,14
+Kashmir,Anantang,Traditional Plant ,Gala,14,5,23,30,March - May,high,Loamy soil,7,20
+Kashmir,Anantang,Traditional Plant ,Gala,14,5,24,35,March - May,medium ,Loamy soil,5.9,21
+Kashmir,Anantang,Traditional Plant ,Gala,13,5,25,35,March - May,medium ,Loamy soil,5.8,22
+Kashmir,Anantang,Traditional Plant ,Gala,15,5,24,36,March - May,medium ,Loamy soil,6,23
+Kashmir,Anantang,Traditional Plant ,Gala,16,6,23,37,March - May,medium ,Loamy soil,6.1,20
+Kashmir,Anantang,Traditional Plant ,Gala,17,6,24,40,March - May,medium ,Loamy soil,6.5,23
+Kashmir,Anantang,Traditional Plant ,Gala,17,6,25,42,March - May,high,Loamy soil,6.1,14
+Kashmir,Anantang,Traditional Plant ,Gala,16,6,24,41,March - May,high,Loamy soil,6.2,15
+Kashmir,Anantang,Traditional Plant ,Gala,17,6,23,45,March - June,medium ,Loamy soil,6,15
+Kashmir,Anantang,Traditional Plant ,Gala,16,6,23,46,March - June,high,Loamy soil,5.8,15
+Kashmir,Anantang,Traditional Plant ,Gala,17,5.5,24,50,March - June,high,Loamy soil,7,16
+Kashmir,Anantang,Traditional Plant ,Gala,18,5.5,22,40,March - June,high,Loamy soil,6,14
+Kashmir,Anantang,Traditional Plant ,Gala,17,5.5,21,30,March - June,medium ,Loamy soil,6.1,20
+Kashmir,Anantang,Traditional Plant ,Gala,16,5,26,45,March - June,medium ,Loamy soil,6.2,21
+Kashmir,Anantang,Traditional Plant ,Gala,15,5.1,27,48,March - June,high,Loamy soil,5.8,22
+Kashmir,Anantang,Traditional Plant ,Gala,15,5.2,30,46,March - June,medium ,Loamy soil,5.9,23
+Kashmir,Anantang,Traditional Plant ,Gala,14,5.3,30,50,March - June,medium ,Loamy soil,6,10
+Kashmir,Anantang,Traditional Plant ,Gala,14,5.4,32,50,March - June,high,Loamy soil,6.9,10
+Kashmir,Anantang,Traditional Plant ,Gala,15,5,35,55,March - June,Very high,Loamy soil,6.2,10
+Kashmir,Anantang,Traditional Plant ,Gala,16,5,36,45,March - June,Very high,Loamy soil,6,10
+Kashmir,Anantang,Traditional Plant ,Gala,17,5.2,33,35,March - June,medium ,Loamy soil,6,11
+Kashmir,Anantang,Traditional Plant ,Gala,15,5.3,32,31,March - May,medium ,Loamy soil,7,9
+Kashmir,Anantang,Traditional Plant ,Gala,16,5.6,30,38,March - May,high,Loamy soil,6.5,8
+Kashmir,Anantang,Traditional Plant ,Gala,17,5,30,37,March - May,medium ,Loamy soil,6.1,8
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5.5,25,34,March - June,medium ,Loamy soil,7,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5.6,20,38,March - June,medium ,Loamy soil,7,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5.7,21,39,March - June,medium ,Loamy soil,6.9,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4,22,34,March - June,high,Loamy soil,6.5,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4.5,23,35,March - June,medium ,Loamy soil,6.5,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4,24,30,March - June,medium ,Loamy soil,6.6,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4,25,32,March - June,high,Loamy soil,6,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4,26,30,March - June,Very high,Loamy soil,6.5,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5,27,35,March - June,Very high,Loamy soil,6.7,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5,28,40,March - June,medium ,Loamy soil,6.7,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5,29,45,March - June,medium ,Loamy soil,6.8,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5,20,48,March - June,high,Loamy soil,6.8,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4,20,42,March - May,high,Loamy soil,6,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4,19,40,March - May,high,Loamy soil,6.9,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4,18,45,March - May,medium ,Loamy soil,6.5,14
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4,18,46,March - May,medium ,Loamy soil,6.4,14
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4.5,19,48,March - May,medium ,Loamy soil,6.5,14
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4.6,20,54,March - May,medium ,Loamy soil,6.7,14
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4.7,30,51,March - May,medium ,Loamy soil,6.8,14
+Kashmir,Anantang,M9 T337,Golden Delicious,16,4.8,34,55,March - May,medium ,Loamy soil,6.7,12
+Kashmir,Anantang,M9 T337,Golden Delicious,14,4.9,32,51,March - May,high,Loamy soil,6.6,11
+Kashmir,Anantang,M9 T337,Golden Delicious,13,5,33,50,March - May,medium ,Loamy soil,6.5,14
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5,32,42,March - May,medium ,Loamy soil,6.7,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,6,32,39,March - May,high,Loamy soil,6.8,16
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5,31,36,March - May,Very high,Loamy soil,6.7,17
+Kashmir,Anantang,M9 T337,Golden Delicious,15,6,30,38,March - May,Very high,Loamy soil,6.5,13
+Kashmir,Anantang,M9 T337,Golden Delicious,15,6,30,42,March - May,medium ,Loamy soil,6.4,12
+Kashmir,Anantang,M9 T337,Golden Delicious,15,6,20,45,March - May,medium ,Loamy soil,6.5,11
+Kashmir,Anantang,M9 T337,Golden Delicious,15,6,20,51,March - May,medium ,Loamy soil,6,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5,20,50,March - May,medium ,Loamy soil,6.7,14
+Kashmir,Anantang,M9 T337,Golden Delicious,15,6,21,40,March - May,medium ,Loamy soil,6.8,13
+Kashmir,Anantang,M9 T337,Golden Delicious,15,6,22,42,March - May,medium ,Loamy soil,6.9,13
+Kashmir,Anantang,M9 T337,Golden Delicious,15,6,20,43,March - May,high,Loamy soil,7.1,12
+Kashmir,Anantang,M9 T337,Golden Delicious,15,6,23,45,March - May,high,Loamy soil,7.2,11
+Kashmir,Anantang,M9 T337,Golden Delicious,15,6,24,46,March - May,high,Loamy soil,7.3,10
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5,25,48,March - May,high,Loamy soil,7.4,16
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4.5,26,40,March - May,high,Loamy soil,7.5,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,4.5,27,51,March - May,high,Loamy soil,7.4,15
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5,28,36,March - May,medium ,Loamy soil,7.3,16
+Kashmir,Anantang,M9 T337,Golden Delicious,15,5,29,39,March - May,medium ,Loamy soil,7.2,15
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,5,22,34,March - May,medium ,Loamy soil,6.5,25
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,5,15,32,March - May,high,Loamy soil,6,22
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,5,15,31,March - May,medium ,Loamy soil,6.1,23
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,6,16,37,March - May,medium ,Loamy soil,6.5,24
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,6,14,38,March - May,high,Loamy soil,6.6,25
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,6,17,30,March - May,Very high,Loamy soil,6.7,22
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,6,19,36,March - May,medium ,Loamy soil,6.8,21
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,6,20,38,March - May,medium ,Loamy soil,6.9,20
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,18,6,23,39,March - May,medium ,Loamy soil,7,19
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,19,5,24,45,March - May,medium ,Loamy soil,7.1,15
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,6,25,42,March - May,medium ,Loamy soil,7.2,14
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,21,6,28,41,March - May,high,Loamy soil,7.3,13
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,22,4,30,40,March - May,medium ,Loamy soil,7.4,12
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,23,4,33,46,March - May,medium ,Loamy soil,7.5,11
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,18,4,35,43,March - May,high,Loamy soil,7,10
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,19,4,33,35,March - May,Very high,Loamy soil,7,14
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,4,31,38,March - May,medium ,Loamy soil,7,15
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,21,4,32,39,March - May,medium ,Loamy soil,6,16
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,22,4,32,31,March - May,high,Loamy soil,6,17
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,23,5,32,35,March - May,high,Loamy soil,6,14
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,18,5,33,31,March - May,high,Loamy soil,6,11
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,19,6,30,38,March - May,medium ,Loamy soil,6.3,12
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,6,30,37,March - May,high,Loamy soil,6.5,13
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,21,6,29,34,March - May,medium ,Loamy soil,6.6,13
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,22,6,29,38,March - May,medium ,Loamy soil,6.7,14
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,23,6,25,39,March - May,high,Loamy soil,6.8,15
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,18,6,24,34,March - May,Very high,Loamy soil,6.9,14
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,19,6,24,35,March - May,medium ,Loamy soil,7,15
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,4.5,24,30,March - May,medium ,Loamy soil,7.1,15
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,21,5.4,22,32,March - May,medium ,Loamy soil,7.2,14
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,22,5.6,21,30,March - May,medium ,Loamy soil,7.3,13
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,23,5.5,21,35,March - May,high,Loamy soil,7.4,12
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,18,5.6,20,31,March - May,medium ,Loamy soil,7.5,11
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,19,5.6,20,38,March - May,medium ,Loamy soil,6.5,10
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,5,20,37,March - May,high,Loamy soil,6.5,16
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,21,4,20,34,March - May,Very high,Loamy soil,6,17
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,22,4,23,38,March - May,medium ,Loamy soil,6.4,15
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,23,5,21,39,March - May,medium ,Loamy soil,6.5,14
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,5,23,34,March - May,medium ,Loamy soil,6.7,15
+Jammu and Kashmir,Baramulla,Traditional Plant ,Red Delicious,20,5,22,35,March - May,medium ,Loamy soil,6.6,16
+Maharashtra,Satara,Traditional Plant,Shimala,3,2,20,77,June-Sept,medium,Black Soil,6.5,4
+Maharashtra,Satara,Traditional Plant,Shimala,3,2,15,45,June-Sept,medium,Black Soil,6.5,5.1
+Maharashtra,Satara,Traditional Plant,Shimala,3,2,16,46,June-Sept,medium,Black Soil,6.5,4.1
+Maharashtra,Satara,Traditional Plant,Shimala,3,2,20,60,June-Sept,medium,Black Soil,6.5,4.6
+Maharashtra,Satara,Traditional Plant,Shimala,3,2,23,68,June-Sept,medium,Black Soil,7,4.3
+Maharashtra,Satara,Traditional Plant,Shimala,3,2,24,56,June-Sept,medium,Black Soil,7,4.9
+Maharashtra,Satara,Traditional Plant,Shimala,3,2,25,66,June-Sept,low,Black Soil,7,4.7
+Maharashtra,Satara,Traditional Plant,Shimala,3,2,26,67,June-Sept,low,Black Soil,7,4.8
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,30,76,June-Sept,low,Black Soil,7,4.9
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,30,55,June-Sept,low,Black Soil,7,4.2
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,35,45,June-Sept,low,Black Soil,6,4.1
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,35,46,June-Sept,low,Black Soil,6,3
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,25,65,June-Sept,low,Black Soil,6,3.5
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,26,72,June-Sept,low,Black Soil,6,3.4
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,29,70,June-Sept,low,Black Soil,6,3.6
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,30,68,June-Sept,low,Black Soil,6,3.9
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,30,58,June-Sept,low,Black Soil,6,2.9
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,22,48,June-Sept,low,Black Soil,6.1,3
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,23,65,June-Sept,low,Black Soil,6.2,3
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,24,68,June-Sept,low,Black Soil,6.3,3
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,25,52,June-Sept,low,Black Soil,6,3
+Maharashtra,Satara,Traditional Plant,Shimala,3,2.5,22,81,June-Sept,low,Black Soil,6.4,4
+Maharashtra,Satara,Traditional Plant,Shimala,3,2.5,30,78,June-Sept,low,Black Soil,6.6,4
+Maharashtra,Satara,Traditional Plant,Shimala,3,2.5,25,77,June-Sept,low,Black Soil,6.5,4.5
+Maharashtra,Satara,Traditional Plant,Shimala,3,2.5,25,79,June-Sept,low,Black Soil,6.4,4
+Maharashtra,Satara,Traditional Plant,Shimala,3,2.5,25,80,June-Sept,low,Black Soil,6.7,4.6
+Maharashtra,Satara,Traditional Plant,Shimala,3,2.5,30,50,June-Sept,low,Black Soil,6.8,4.5
+Maharashtra,Satara,Traditional Plant,Shimala,3,2.5,31,40,June-Sept,low,Black Soil,6.5,4.5
+Maharashtra,Satara,Traditional Plant,Shimala,3,3.5,32,42,June-Sept,low,Black Soil,6.5,4.3
+Maharashtra,Satara,Traditional Plant,Shimala,3,3.5,30,49,June-Sept,low,Black Soil,6.6,4.2
+Maharashtra,Satara,Traditional Plant,Shimala,3,3.5,36,46,June-Sept,low,Black Soil,6.7,4.1
+Maharashtra,Satara,Traditional Plant,Shimala,3,3.5,26,52,June-Sept,low,Black Soil,6.8,4
+Maharashtra,Satara,Traditional Plant,Shimala,3,3.5,29,57,June-Sept,low,Black Soil,6.9,4
+Maharashtra,Satara,Traditional Plant,Shimala,3,3.5,28,68,June-Sept,low,Black Soil,7,4
+Maharashtra,Satara,Traditional Plant,Shimala,3,3.5,24,61,June-Sept,medium,Black Soil,7,4
+Maharashtra,Satara,Traditional Plant,Shimala,3,2,22,72,June-Sept,medium,Black Soil,7,4.1
+Maharashtra,Satara,Traditional Plant,Shimala,3,2,20,71,June-Sept,medium,Black Soil,7,4.2
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,28,85,June-Sept,medium,Black Soil,7,4.3
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,30,40,June-Sept,medium,Black Soil,7,4.2
+Maharashtra,Satara,Traditional Plant,Shimala,3,3,36,40,June-Sept,medium,Black Soil,7,4.1
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2,30,40,June-Sept,medium,Black Soil,6.5,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.5,18,40,June-Sept,medium,Black Soil,7,5.3
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.6,19,78,June-Sept,medium,Black Soil,7,5.4
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.6,26,84,June-Sept,medium,Black Soil,7,4.5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,25,82,June-Sept,medium,Black Soil,7,4.6
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,28,50,June-Sept,medium,Black Soil,7,4.7
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,30,60,June-Sept,medium,Black Soil,7,4.8
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,32,60,June-Sept,medium,Black Soil,6,4.9
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,33,60,June-Sept,medium,Black Soil,6,4.6
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,36,60,June-Sept,medium,Black Soil,6,4.3
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.5,35,65,June-Sept,medium,Black Soil,6,4.6
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.5,34,65,June-Sept,low,Black Soil,6,4.9
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.6,36,68,June-Sept,low,Black Soil,6,4.9
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.6,31,80,June-Sept,low,Black Soil,6.3,4.6
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.5,32,48,June-Sept,low,Black Soil,6.3,4.5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2,33,65,June-Sept,low,Black Soil,6.2,4.7
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2,33,68,June-Sept,low,Black Soil,6.1,4.8
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.6,35,52,June-Sept,low,Black Soil,6,4.9
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.6,36,46,June-Sept,low,Black Soil,6,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2.5,34,43,June-Sept,low,Black Soil,6.5,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,30,52,June-Sept,medium,Black Soil,6.5,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,30,50,June-Sept,medium,Black Soil,6.5,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,36,60,June-Sept,medium,Black Soil,6.4,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3.1,35,75,June-Sept,medium,Black Soil,7,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3.2,30,80,June-Sept,medium,Black Soil,7,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3.3,25,81,June-Sept,medium,Black Soil,7,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,26,78,June-Sept,medium,Black Soil,6.5,4
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,24,79,June-Sept,low,Black Soil,6.5,4
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,26,52,June-Sept,low,Black Soil,6.6,3
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,3,24,57,June-Sept,low,Black Soil,6.8,3.5
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2,25,65,June-Sept,low,Black Soil,6.7,3.6
+Maharashtra,Satara,Traditional Plant,HRMN 99,3,2,30,65,June-Sept,low,Black Soil,6.2,3.4
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,20,55,June-Sept,medium,Black Soil,6.5,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2,35,50,June-Sept,medium,Black Soil,6.5,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2,30,60,June-Sept,medium,Black Soil,6.4,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2,25,65,June-Sept,medium,Black Soil,6.6,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2,26,70,June-Sept,medium,Black Soil,6.8,7
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2,27,69,June-Sept,medium,Black Soil,6.9,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2,28,40,June-Sept,medium,Black Soil,7,8
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2,29,50,June-Sept,medium,Black Soil,6.3,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,30,62,June-Sept,medium,Black Soil,6.2,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,35,70,June-Sept,medium,Black Soil,6.1,4
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,36,68,June-Sept,low,Black Soil,6.5,3
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,34,58,June-Sept,low,Black Soil,6.4,4.5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,38,48,June-Sept,low,Black Soil,6.5,5.6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,26,65,June-Sept,low,Black Soil,6.5,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,28,68,June-Sept,low,Black Soil,6.6,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,30,52,June-Sept,low,Black Soil,6.7,4
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2.6,31,46,June-Sept,low,Black Soil,6.2,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2.5,32,43,June-Sept,medium,Black Soil,6.3,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2.4,33,52,June-Sept,medium,Black Soil,6.1,4.5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2.8,36,50,June-Sept,medium,Black Soil,6.6,5.6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,2.9,35,60,June-Sept,medium,Black Soil,6.1,4.8
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,34,50,June-Sept,medium,Black Soil,6.3,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3,38,40,June-Sept,medium,Black Soil,6.2,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.2,35,42,June-Sept,medium,Black Soil,6.5,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.3,35,49,June-Sept,medium,Black Soil,6.4,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.5,32,46,June-Sept,medium,Black Soil,6.8,5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.5,31,52,June-Sept,medium,Black Soil,6.9,4
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.5,30,57,June-Sept,medium,Black Soil,7,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.5,34,70,June-Sept,medium,Black Soil,7,8
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.5,35,71,June-Sept,medium,Black Soil,7.2,7
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,4,36,72,June-Sept,medium,Black Soil,7.3,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,4,30,73,June-Sept,medium,Black Soil,7.1,8
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.2,31,74,June-Sept,medium,Black Soil,7,7
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.1,25,75,June-Sept,medium,Black Soil,7.5,6
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.3,26,76,June-Sept,medium,Black Soil,7.6,6.5
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,3.5,27,77,June-Sept,medium,Black Soil,6,6.4
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,4,28,81,June-Sept,medium,Black Soil,6,6.8
+Maharashtra,Satara,Traditional Plant,HRMN 99,4,4,29,79,June-Sept,medium,Black Soil,6,7.5
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,20,34,March-May,medium,Loamy soil,6.5,25
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,21,35,March-May,high,Loamy soil,6,24
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,22,30,March-May,high,Loamy soil,6.6,23
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,23,32,March-May,high,Loamy soil,6,23
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,24,30,March-May,high,Loamy soil,6.5,22
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,23,35,March-May,high,Loamy soil,6.3,21
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,4,21,40,March-May,high,Loamy soil,6.2,22
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,4,20,45,March-May,high,Loamy soil,6.1,20
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,23,48,March-May,high,Loamy soil,6.2,23
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,21,42,March-May,high,Loamy soil,6.3,20
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,23,40,March-May,high,Loamy soil,6.6,22
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,22,45,March-May,high,Loamy soil,6.5,23
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,22,46,March-May,high,Loamy soil,6.4,21
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,22,48,March-May,medium,Loamy soil,6.1,20
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,21,54,March-May,medium,Loamy soil,7,23
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.5,23,31,March-May,medium,Loamy soil,7.1,24
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.5,21,32,March-May,medium,Loamy soil,7.2,25
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.5,20,33,March-May,medium,Loamy soil,7.3,26
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.6,23,32,March-May,medium,Loamy soil,7,27
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.6,21,34,March-May,medium,Loamy soil,7,23
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.6,20,35,March-May,medium,Loamy soil,6.1,25
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.6,25,30,March-May,medium,Loamy soil,6.5,24
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.7,23,32,March-May,medium,Loamy soil,6.5,23
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.7,22,30,March-May,medium,Loamy soil,6.5,21
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.2,21,35,March-May,medium,Loamy soil,6.5,20
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.3,20,40,March-May,Very high,Loamy soil,6.5,22
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.3,29,45,March-May,Very high,Loamy soil,6.5,23
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.4,28,48,March-May,Very high,Loamy soil,6.5,22
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2.5,21,42,March-May,Very high,Loamy soil,6.5,20
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,22,40,March-May,Very high,Loamy soil,6.5,10
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,23,45,March-May,Very high,Loamy soil,6,12
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,25,46,March-May,Very high,Loamy soil,6,11
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,26,48,March-May,Very high,Loamy soil,6,13
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,24,54,March-May,Very high,Loamy soil,7,12
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,25,51,March-May,Very high,Loamy soil,7,13
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,23,55,March-May,Very high,Loamy soil,7,13
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,3,22,51,March-May,high,Loamy soil,6.8,15
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,21,50,March-May,high,Loamy soil,6.4,16
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,20,55,March-May,high,Loamy soil,6.3,14
+Jammu and Kashmir,Samba,Traditional Plant,Kullu,20,2,20,31,March-May,high,Loamy soil,6.1,13
