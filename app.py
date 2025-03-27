@@ -66,6 +66,8 @@ def load_data_to_mongodb():
         print(f"Successfully loaded {len(result.inserted_ids)} records into MongoDB")
         
         # Verify data was loaded
+
+        
         count = collection.count_documents({})
         print(f"Total documents in collection: {count}")
         

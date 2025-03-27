@@ -5,76 +5,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Farming Recommendations</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #2ecc71;
+            --secondary-color: #27ae60;
+            --accent-color: #f1c40f;
+            --text-color: #2c3e50;
+            --light-bg: #f8f9fa;
+        }
+
         body {
-            background-color: #f8f9fa;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 20px;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
         .card {
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
         }
-        .stats-card {
-            background-color: #e9ecef;
-        }
-        .recommendation-card {
-            transition: transform 0.2s;
-        }
-        .recommendation-card:hover {
+
+        .card:hover {
             transform: translateY(-5px);
         }
+
+        .stats-card {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .stats-card .card-title {
+            color: white;
+            font-weight: bold;
+        }
+
+        .stats-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        .form-control {
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(46, 204, 113, 0.25);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 10px 30px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .recommendation-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .recommendation-card .card-title {
+            color: var(--primary-color);
+            font-weight: bold;
+            padding: 15px;
+            margin: 0;
+            background-color: rgba(46, 204, 113, 0.1);
+        }
+
         .similarity-score {
-            color: #6c757d;
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .recent-inputs {
+            margin-top: 40px;
+        }
+
+        .timestamp {
+            color: #666;
             font-size: 0.9em;
         }
-        .input-group {
-            margin-bottom: 15px;
-        }
-        .recent-inputs {
-            margin-top: 30px;
-        }
-        .timestamp {
-            color: #6c757d;
-            font-size: 0.8em;
-        }
+
         .saved-recommendations {
             margin-top: 20px;
             display: none;
         }
+
         .toggle-recommendations {
             cursor: pointer;
-            color: #0d6efd;
+            color: var(--primary-color);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
         }
+
         .toggle-recommendations:hover {
-            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            font-size: 1.5rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .stat-item i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center mb-4">Apple Farming Recommendations</h1>
+        <h1 class="page-title">
+            <i class="fas fa-apple-alt"></i>
+            Apple Farming Recommendations
+        </h1>
         
         <!-- Statistics Card -->
         <div class="card stats-card mb-4">
             <div class="card-body">
-                <h5 class="card-title">Dataset Statistics</h5>
+                <h5 class="card-title">
+                    <i class="fas fa-chart-bar"></i>
+                    Dataset Statistics
+                </h5>
                 <div class="row">
                     <div class="col-md-4">
-                        <p>Total States: {{ stats.total_states }}</p>
-                        <p>Total Regions: {{ stats.total_regions }}</p>
+                        <div class="stat-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Total States: {{ stats.total_states }}</p>
+                            <p>Total Regions: {{ stats.total_regions }}</p>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <p>Total Entries: {{ stats.total_entries }}</p>
-                        <p>Total User Inputs: {{ stats.total_user_inputs }}</p>
-                        <p>Average Yield: {{ "%.2f"|format(stats.avg_yield) }} kg</p>
+                        <div class="stat-item">
+                            <i class="fas fa-database"></i>
+                            <p>Total Entries: {{ stats.total_entries }}</p>
+                            <p>Total User Inputs: {{ stats.total_user_inputs }}</p>
+                            <p>Average Yield: {{ "%.2f"|format(stats.avg_yield) }} kg</p>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <p>Average Temperature: {{ "%.1f"|format(stats.avg_temperature) }}°C</p>
-                        <p>Average Humidity: {{ "%.1f"|format(stats.avg_humidity) }}%</p>
+                        <div class="stat-item">
+                            <i class="fas fa-thermometer-half"></i>
+                            <p>Average Temperature: {{ "%.1f"|format(stats.avg_temperature) }}°C</p>
+                            <p>Average Humidity: {{ "%.1f"|format(stats.avg_humidity) }}%</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,26 +231,41 @@
         <!-- Input Form -->
         <div class="card mb-4">
             <div class="card-body">
-                <h5 class="card-title">Enter Your Farming Conditions</h5>
+                <h5 class="card-title">
+                    <i class="fas fa-clipboard-list"></i>
+                    Enter Your Farming Conditions
+                </h5>
                 <form id="recommendationForm">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="input-group">
-                                <label for="age" class="form-label">Plant Age (years)</label>
+                                <label for="age" class="form-label">
+                                    <i class="fas fa-tree"></i>
+                                    Plant Age (years)
+                                </label>
                                 <input type="number" class="form-control" id="age" name="age" required min="0" step="0.1">
                             </div>
                             <div class="input-group">
-                                <label for="temperature" class="form-label">Temperature (°C)</label>
+                                <label for="temperature" class="form-label">
+                                    <i class="fas fa-thermometer-half"></i>
+                                    Temperature (°C)
+                                </label>
                                 <input type="number" class="form-control" id="temperature" name="temperature" required step="0.1">
                             </div>
                             <div class="input-group">
-                                <label for="humidity" class="form-label">Humidity (%)</label>
+                                <label for="humidity" class="form-label">
+                                    <i class="fas fa-tint"></i>
+                                    Humidity (%)
+                                </label>
                                 <input type="number" class="form-control" id="humidity" name="humidity" required min="0" max="100" step="0.1">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="input-group">
-                                <label for="rain_level" class="form-label">Rain Level</label>
+                                <label for="rain_level" class="form-label">
+                                    <i class="fas fa-cloud-rain"></i>
+                                    Rain Level
+                                </label>
                                 <select class="form-control" id="rain_level" name="rain_level" required>
                                     <option value="100">Very High</option>
                                     <option value="75">High</option>
@@ -111,18 +274,33 @@
                                 </select>
                             </div>
                             <div class="input-group">
-                                <label for="ph" class="form-label">Soil pH</label>
+                                <label for="ph" class="form-label">
+                                    <i class="fas fa-flask"></i>
+                                    Soil pH
+                                </label>
                                 <input type="number" class="form-control" id="ph" name="ph" required min="0" max="14" step="0.1">
                             </div>
                             <div class="input-group">
-                                <label for="yield" class="form-label">Expected Yield (kg)</label>
+                                <label for="yield" class="form-label">
+                                    <i class="fas fa-weight-hanging"></i>
+                                    Expected Yield (kg)
+                                </label>
                                 <input type="number" class="form-control" id="yield" name="yield" required min="0" step="0.1">
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Get Recommendations</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                        Get Recommendations
+                    </button>
                 </form>
             </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div class="loading">
+            <i class="fas fa-spinner"></i>
+            <p>Generating recommendations...</p>
         </div>
 
         <!-- Recommendations Display -->
@@ -132,42 +310,56 @@
 
         <!-- Recent User Inputs -->
         <div class="recent-inputs">
-            <h3 class="mb-4">Recent User Inputs</h3>
+            <h3 class="section-title">
+                <i class="fas fa-history"></i>
+                Recent User Inputs
+            </h3>
             <div class="row">
                 {% for input in recent_inputs %}
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">User Input</h5>
-                            <p class="timestamp">Submitted: {{ input.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+                            <h5 class="card-title">
+                                <i class="fas fa-user-circle"></i>
+                                User Input
+                            </h5>
+                            <p class="timestamp">
+                                <i class="far fa-clock"></i>
+                                Submitted: {{ input.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}
+                            </p>
                             <p class="card-text">
-                                <strong>Age:</strong> {{ input.age }} years<br>
-                                <strong>Temperature:</strong> {{ input.temperature }}°C<br>
-                                <strong>Humidity:</strong> {{ input.humidity }}%<br>
-                                <strong>Rain Level:</strong> {{ input.rain_level }}<br>
-                                <strong>Soil pH:</strong> {{ input.ph }}<br>
-                                <strong>Expected Yield:</strong> {{ input.yield }} kg
+                                <strong><i class="fas fa-tree"></i> Age:</strong> {{ input.age }} years<br>
+                                <strong><i class="fas fa-thermometer-half"></i> Temperature:</strong> {{ input.temperature }}°C<br>
+                                <strong><i class="fas fa-tint"></i> Humidity:</strong> {{ input.humidity }}%<br>
+                                <strong><i class="fas fa-cloud-rain"></i> Rain Level:</strong> {{ input.rain_level }}<br>
+                                <strong><i class="fas fa-flask"></i> Soil pH:</strong> {{ input.ph }}<br>
+                                <strong><i class="fas fa-weight-hanging"></i> Expected Yield:</strong> {{ input.yield }} kg
                             </p>
                             <p class="toggle-recommendations" onclick="toggleRecommendations('{{ input._id }}')">
+                                <i class="fas fa-chevron-down"></i>
                                 Show/Hide Recommendations
                             </p>
                             <div id="recommendations-{{ input._id }}" class="saved-recommendations">
                                 {% for rec in input.recommendations %}
                                 <div class="card recommendation-card mb-3">
                                     <div class="card-body">
-                                        <h6 class="card-title">{{ rec.state }} - {{ rec.region }}</h6>
+                                        <h6 class="card-title">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            {{ rec.state }} - {{ rec.region }}
+                                        </h6>
                                         <p class="card-text">
-                                            <strong>Plant Variety:</strong> {{ rec.plant_variety }}<br>
-                                            <strong>Apple Variety:</strong> {{ rec.apple_variety }}<br>
-                                            <strong>Age:</strong> {{ rec.age }} years<br>
-                                            <strong>Temperature:</strong> {{ rec.temperature }}°C<br>
-                                            <strong>Humidity:</strong> {{ rec.humidity }}%<br>
-                                            <strong>Rain Level:</strong> {{ rec.rain_level }}<br>
-                                            <strong>Soil Type:</strong> {{ rec.soil_type }}<br>
-                                            <strong>pH:</strong> {{ rec.ph }}<br>
-                                            <strong>Yield:</strong> {{ rec.yield }} kg
+                                            <strong><i class="fas fa-seedling"></i> Plant Variety:</strong> {{ rec.plant_variety }}<br>
+                                            <strong><i class="fas fa-apple-alt"></i> Apple Variety:</strong> {{ rec.apple_variety }}<br>
+                                            <strong><i class="fas fa-tree"></i> Age:</strong> {{ rec.age }} years<br>
+                                            <strong><i class="fas fa-thermometer-half"></i> Temperature:</strong> {{ rec.temperature }}°C<br>
+                                            <strong><i class="fas fa-tint"></i> Humidity:</strong> {{ rec.humidity }}%<br>
+                                            <strong><i class="fas fa-cloud-rain"></i> Rain Level:</strong> {{ rec.rain_level }}<br>
+                                            <strong><i class="fas fa-layer-group"></i> Soil Type:</strong> {{ rec.soil_type }}<br>
+                                            <strong><i class="fas fa-flask"></i> pH:</strong> {{ rec.ph }}<br>
+                                            <strong><i class="fas fa-weight-hanging"></i> Yield:</strong> {{ rec.yield }} kg
                                         </p>
                                         <p class="similarity-score">
+                                            <i class="fas fa-percentage"></i>
                                             Similarity Score: {{ "%.1f"|format(rec.similarity * 100) }}%
                                         </p>
                                     </div>
@@ -187,6 +379,9 @@
         $(document).ready(function() {
             $('#recommendationForm').on('submit', function(e) {
                 e.preventDefault();
+                
+                // Show loading indicator
+                $('.loading').show();
                 
                 const formData = {
                     age: $('#age').val(),
@@ -208,6 +403,10 @@
                     },
                     error: function(xhr, status, error) {
                         alert('Error getting recommendations: ' + error);
+                    },
+                    complete: function() {
+                        // Hide loading indicator
+                        $('.loading').hide();
                     }
                 });
             });
@@ -221,19 +420,23 @@
                         <div class="col-md-4 mb-4">
                             <div class="card recommendation-card">
                                 <div class="card-body">
-                                    <h5 class="card-title">${rec.state} - ${rec.region}</h5>
+                                    <h6 class="card-title">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        ${rec.state} - ${rec.region}
+                                    </h6>
                                     <p class="card-text">
-                                        <strong>Plant Variety:</strong> ${rec.plant_variety}<br>
-                                        <strong>Apple Variety:</strong> ${rec.apple_variety}<br>
-                                        <strong>Age:</strong> ${rec.age} years<br>
-                                        <strong>Temperature:</strong> ${rec.temperature}°C<br>
-                                        <strong>Humidity:</strong> ${rec.humidity}%<br>
-                                        <strong>Rain Level:</strong> ${rec.rain_level}<br>
-                                        <strong>Soil Type:</strong> ${rec.soil_type}<br>
-                                        <strong>pH:</strong> ${rec.ph}<br>
-                                        <strong>Yield:</strong> ${rec.yield} kg
+                                        <strong><i class="fas fa-seedling"></i> Plant Variety:</strong> ${rec.plant_variety}<br>
+                                        <strong><i class="fas fa-apple-alt"></i> Apple Variety:</strong> ${rec.apple_variety}<br>
+                                        <strong><i class="fas fa-tree"></i> Age:</strong> ${rec.age} years<br>
+                                        <strong><i class="fas fa-thermometer-half"></i> Temperature:</strong> ${rec.temperature}°C<br>
+                                        <strong><i class="fas fa-tint"></i> Humidity:</strong> ${rec.humidity}%<br>
+                                        <strong><i class="fas fa-cloud-rain"></i> Rain Level:</strong> ${rec.rain_level}<br>
+                                        <strong><i class="fas fa-layer-group"></i> Soil Type:</strong> ${rec.soil_type}<br>
+                                        <strong><i class="fas fa-flask"></i> pH:</strong> ${rec.ph}<br>
+                                        <strong><i class="fas fa-weight-hanging"></i> Yield:</strong> ${rec.yield} kg
                                     </p>
                                     <p class="similarity-score">
+                                        <i class="fas fa-percentage"></i>
                                         Similarity Score: ${(rec.similarity * 100).toFixed(1)}%
                                     </p>
                                 </div>
@@ -247,7 +450,10 @@
 
         function toggleRecommendations(inputId) {
             const recommendationsDiv = $(`#recommendations-${inputId}`);
+            const toggleIcon = recommendationsDiv.prev().find('i');
+            
             recommendationsDiv.slideToggle();
+            toggleIcon.toggleClass('fa-chevron-down fa-chevron-up');
         }
     </script>
 </body>
