@@ -7,6 +7,7 @@ from pymongo import MongoClient
 from bson import ObjectId
 import json
 from datetime import datetime
+from twilio.rest import Client
 
 app = Flask(__name__)
 
@@ -31,6 +32,36 @@ except Exception as e:
     collection = None
     user_inputs = None
 
+# Twilio setup (replace with your credentials)
+TWILIO_ACCOUNT_SID = 'your_account_sid'
+TWILIO_AUTH_TOKEN = 'your_auth_token'
+TWILIO_FROM_NUMBER = '+1234567890'
+twilio_client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
+
+# MongoDB collection for notification logs
+msg_collection = db['msg']
+
+# Example notification function
+
+def send_sms_and_log(contact, message):
+    log = {
+        'contact': contact,
+        'message': message,
+        'timestamp': datetime.now(),
+        'status': 'pending'
+    }
+    try:
+        twilio_client.messages.create(
+            body=message,
+            from_=TWILIO_FROM_NUMBER,
+            to=f"+91{contact}"
+        )
+        log['status'] = 'sent'
+    except Exception as e:
+        log['status'] = f'error: {str(e)}'
+    msg_collection.insert_one(log)
+    return log['status']
+
 def convert_rain_level(rain_level):
     # Convert rain level string to numerical value
     rain_level = str(rain_level).strip().lower()
@@ -45,6 +76,26 @@ def convert_rain_level(rain_level):
     else:
         return 50  # default value
 
+def convert_soil_type(soil_type):
+    # Convert soil type string to categorical value
+    soil_type = str(soil_type).strip().lower()
+    if soil_type == 'loamy soil':
+        return 'loamy soil'
+    elif soil_type == 'black soil':
+        return 'black soil'
+    else:
+        return 'loamy soil'  # default to loamy soil
+
+def convert_soil_type_to_string(soil_type_value):
+    # Convert soil type value back to string for display (already a string)
+    soil_type_value = str(soil_type_value).strip()
+    if soil_type_value.lower() == 'loamy soil':
+        return 'Loamy soil'
+    elif soil_type_value.lower() == 'black soil':
+        return 'Black Soil'
+    else:
+        return 'Loamy soil'  # default
+
 # Load data into MongoDB if not already present
 def load_data_to_mongodb():
     try:
@@ -57,6 +108,9 @@ def load_data_to_mongodb():
         
         # Convert rain level to numerical values
         df['rain level'] = df['rain level'].apply(convert_rain_level)
+        
+        # Convert soil type to numerical values
+        df['soil type'] = df['soil type'].apply(convert_soil_type)
         
         # Convert DataFrame to list of dictionaries
         records = df.to_dict('records')
@@ -95,7 +149,10 @@ def prepare_data():
         print("DataFrame shape:", df.shape)
         
         # Create a matrix of numerical features for similarity calculation
-        numerical_features = ['Age', 'temperature', 'humidity', 'rain level', 'ph', 'apple yeild in first season']
+        # Handle categorical soil type by converting to numerical
+        df['soil_type_encoded'] = df['soil type'].map({'loamy soil': 1, 'black soil': 2})
+        
+        numerical_features = ['temperature', 'humidity', 'rain level', 'ph', 'soil_type_encoded']
         feature_matrix = df[numerical_features].values
         
         # Normalize the features
@@ -112,8 +169,11 @@ def save_user_input(input_data):
         # Add timestamp to input data
         input_data['timestamp'] = datetime.now()
         # Convert numeric values to float
-        for key in ['age', 'temperature', 'humidity', 'rain_level', 'ph', 'yield']:
+        for key in ['temperature', 'humidity', 'rain_level', 'ph']:
             input_data[key] = float(input_data[key])
+        
+        # Convert soil type to categorical value
+        input_data['soil_type'] = convert_soil_type(input_data['soil_type'])
         
         # Save to MongoDB
         result = user_inputs.insert_one(input_data)
@@ -130,13 +190,15 @@ def get_recommendations(input_data, n_recommendations=3):
         feature_matrix, df = prepare_data()
         
         # Create input feature vector
+        # Convert soil type to numerical for similarity calculation
+        soil_type_encoded = 1 if convert_soil_type(input_data['soil_type']).lower() == 'loamy soil' else 2
+        
         input_features = np.array([
-            float(input_data['age']),
             float(input_data['temperature']),
             float(input_data['humidity']),
             float(input_data['rain_level']),
             float(input_data['ph']),
-            float(input_data['yield'])
+            soil_type_encoded
         ]).reshape(1, -1)
         
         # Normalize input features
@@ -152,7 +214,6 @@ def get_recommendations(input_data, n_recommendations=3):
         for idx in similar_indices:
             similarity_score = similarity_matrix[0][idx]
             row = df.iloc[idx]
-            print("Row data:", row.to_dict())
             recommendations.append({
                 'state': row['State'],
                 'region': row['Region'],
@@ -162,7 +223,7 @@ def get_recommendations(input_data, n_recommendations=3):
                 'temperature': row['temperature'],
                 'humidity': row['humidity'],
                 'rain_level': row['rain level'],
-                'soil_type': row['soil type'],
+                'soil_type': convert_soil_type_to_string(row['soil type']),
                 'ph': row['ph'],
                 'yield': row['apple yeild in first season'],
                 'similarity': float(similarity_score)
@@ -182,40 +243,58 @@ def home():
         states = sorted(collection.distinct('State'))
         regions = sorted(collection.distinct('Region'))
         
+        # Get unique soil types from MongoDB
+        soil_types = sorted(collection.distinct('soil type'))
+        
         # Get some statistics about the dataset
+        avg_temp = collection.aggregate([
+            {'$group': {'_id': None, 'avg': {'$avg': '$temperature'}}}
+        ]).try_next()
+        avg_temp_value = round(avg_temp['avg'], 1) if avg_temp else 0
+
+        avg_humidity = collection.aggregate([
+            {'$group': {'_id': None, 'avg': {'$avg': '$humidity'}}}
+        ]).try_next()
+        avg_humidity_value = round(avg_humidity['avg'], 1) if avg_humidity else 0
+
         stats = {
             'total_states': len(states),
             'total_regions': len(regions),
             'total_entries': collection.count_documents({}),
             'total_user_inputs': user_inputs.count_documents({}),
-            'avg_yield': collection.aggregate([
-                {'$group': {'_id': None, 'avg': {'$avg': '$apple yeild in first season'}}}
-            ]).next()['avg'],
-            'avg_temperature': collection.aggregate([
-                {'$group': {'_id': None, 'avg': {'$avg': '$temperature'}}}
-            ]).next()['avg'],
-            'avg_humidity': collection.aggregate([
-                {'$group': {'_id': None, 'avg': {'$avg': '$humidity'}}}
-            ]).next()['avg']
+            'avg_temperature': avg_temp_value,
+            'avg_humidity': avg_humidity_value
         }
         
         # Get recent user inputs with their recommendations
         recent_inputs = list(user_inputs.find().sort('timestamp', -1).limit(5))
         for input_data in recent_inputs:
             input_data['recommendations'] = get_recommendations(input_data)
+            # Convert soil type back to string for display
+            input_data['soil_type_display'] = convert_soil_type_to_string(input_data['soil_type'])
         
         print(f"Found {len(states)} states and {len(regions)} regions")
         return render_template('index.html', 
                              states=states, 
                              regions=regions,
+                             soil_types=soil_types,
                              stats=stats,
                              recent_inputs=recent_inputs)
     except Exception as e:
         print(f"Error loading home page: {e}")
+        # Provide default values for all expected keys to avoid template errors
         return render_template('index.html', 
                              states=['Error loading states'], 
                              regions=['Error loading regions'],
-                             stats={'error': str(e)},
+                             soil_types=['Error loading soil types'],
+                             stats={
+                                 'total_states': 0,
+                                 'total_regions': 0,
+                                 'total_entries': 0,
+                                 'total_user_inputs': 0,
+                                 'avg_temperature': 0,
+                                 'avg_humidity': 0
+                             },
                              recent_inputs=[])
 
 @app.route('/get_recommendations', methods=['POST'])
@@ -223,12 +302,11 @@ def recommend():
     try:
         # Get input data from form
         input_data = {
-            'age': request.form['age'],
             'temperature': request.form['temperature'],
             'humidity': request.form['humidity'],
             'rain_level': request.form['rain_level'],
             'ph': request.form['ph'],
-            'yield': request.form['yield']
+            'soil_type': request.form['soil_type']
         }
         
         print(f"Received recommendation request with input data: {input_data}")
@@ -275,6 +353,23 @@ def get_saved_recommendations(input_id):
             'recommendations': [{'error': str(e)}]
         })
 
+@app.route('/send_notifications', methods=['POST'])
+def send_notifications():
+    # Example: send a test notification to a hardcoded number
+    contact = '9876543210'  # Replace with dynamic logic as needed
+    message = 'Hello! This is a test notification from your Flask app.'
+    status = send_sms_and_log(contact, message)
+    return jsonify({'contact': contact, 'status': status})
+
+@app.route('/get_notification_log')
+def get_notification_log():
+    logs = list(msg_collection.find().sort('timestamp', -1).limit(20))
+    for log in logs:
+        log['timestamp'] = log['timestamp'].strftime('%Y-%m-%d %H:%M:%S')
+        log['_id'] = str(log['_id'])
+    return jsonify(logs)
+
 if __name__ == '__main__':
     print("Starting Flask application...")
-    app.run(debug=True, host='0.0.0.0', port=5000) 
+    app.run(debug=True, host='0.0.0.0', port=5000)
+    

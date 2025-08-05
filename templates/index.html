@@ -214,14 +214,13 @@
                             <i class="fas fa-database"></i>
                             <p>Total Entries: {{ stats.total_entries }}</p>
                             <p>Total User Inputs: {{ stats.total_user_inputs }}</p>
-                            <p>Average Yield: {{ "%.2f"|format(stats.avg_yield) }} kg</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="stat-item">
                             <i class="fas fa-thermometer-half"></i>
-                            <p>Average Temperature: {{ "%.1f"|format(stats.avg_temperature) }}°C</p>
-                            <p>Average Humidity: {{ "%.1f"|format(stats.avg_humidity) }}%</p>
+                            <p>Average Temperature: {{ "%.1f"|format(stats["avg_temperature"]) }}°C</p>
+                            <p>Average Humidity: {{ "%.1f"|format(stats["avg_humidity"]) }}%</p>
                         </div>
                     </div>
                 </div>
@@ -239,13 +238,6 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="input-group">
-                                <label for="age" class="form-label">
-                                    <i class="fas fa-tree"></i>
-                                    Plant Age (years)
-                                </label>
-                                <input type="number" class="form-control" id="age" name="age" required min="0" step="0.1">
-                            </div>
-                            <div class="input-group">
                                 <label for="temperature" class="form-label">
                                     <i class="fas fa-thermometer-half"></i>
                                     Temperature (°C)
@@ -258,6 +250,18 @@
                                     Humidity (%)
                                 </label>
                                 <input type="number" class="form-control" id="humidity" name="humidity" required min="0" max="100" step="0.1">
+                            </div>
+                            <div class="input-group">
+                                <label for="soil_type" class="form-label">
+                                    <i class="fas fa-layer-group"></i>
+                                    Soil Type
+                                </label>
+                                <select class="form-control" id="soil_type" name="soil_type" required>
+                                    <option value="">Select Soil Type</option>
+                                    {% for soil_type in soil_types %}
+                                    <option value="{{ soil_type }}">{{ soil_type }}</option>
+                                    {% endfor %}
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -279,13 +283,6 @@
                                     Soil pH
                                 </label>
                                 <input type="number" class="form-control" id="ph" name="ph" required min="0" max="14" step="0.1">
-                            </div>
-                            <div class="input-group">
-                                <label for="yield" class="form-label">
-                                    <i class="fas fa-weight-hanging"></i>
-                                    Expected Yield (kg)
-                                </label>
-                                <input type="number" class="form-control" id="yield" name="yield" required min="0" step="0.1">
                             </div>
                         </div>
                     </div>
@@ -328,12 +325,11 @@
                                 Submitted: {{ input.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}
                             </p>
                             <p class="card-text">
-                                <strong><i class="fas fa-tree"></i> Age:</strong> {{ input.age }} years<br>
                                 <strong><i class="fas fa-thermometer-half"></i> Temperature:</strong> {{ input.temperature }}°C<br>
                                 <strong><i class="fas fa-tint"></i> Humidity:</strong> {{ input.humidity }}%<br>
                                 <strong><i class="fas fa-cloud-rain"></i> Rain Level:</strong> {{ input.rain_level }}<br>
                                 <strong><i class="fas fa-flask"></i> Soil pH:</strong> {{ input.ph }}<br>
-                                <strong><i class="fas fa-weight-hanging"></i> Expected Yield:</strong> {{ input.yield }} kg
+                                <strong><i class="fas fa-layer-group"></i> Soil Type:</strong> {{ input.soil_type_display }}
                             </p>
                             <p class="toggle-recommendations" onclick="toggleRecommendations('{{ input._id }}')">
                                 <i class="fas fa-chevron-down"></i>
@@ -372,6 +368,18 @@
                 {% endfor %}
             </div>
         </div>
+
+        <!-- Notification Button -->
+        <div class="mb-4">
+            <button id="notifyBtn" class="btn btn-warning">Send Notifications</button>
+        </div>
+        <!-- Notification Log -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Notification Log</h5>
+                <ul id="notificationLog"></ul>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -384,12 +392,11 @@
                 $('.loading').show();
                 
                 const formData = {
-                    age: $('#age').val(),
                     temperature: $('#temperature').val(),
                     humidity: $('#humidity').val(),
                     rain_level: $('#rain_level').val(),
                     ph: $('#ph').val(),
-                    yield: $('#yield').val()
+                    soil_type: $('#soil_type').val()
                 };
                 
                 $.ajax({
@@ -420,20 +427,8 @@
                         <div class="col-md-4 mb-4">
                             <div class="card recommendation-card">
                                 <div class="card-body">
-                                    <h6 class="card-title">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                        ${rec.state} - ${rec.region}
-                                    </h6>
                                     <p class="card-text">
-                                        <strong><i class="fas fa-seedling"></i> Plant Variety:</strong> ${rec.plant_variety}<br>
-                                        <strong><i class="fas fa-apple-alt"></i> Apple Variety:</strong> ${rec.apple_variety}<br>
-                                        <strong><i class="fas fa-tree"></i> Age:</strong> ${rec.age} years<br>
-                                        <strong><i class="fas fa-thermometer-half"></i> Temperature:</strong> ${rec.temperature}°C<br>
-                                        <strong><i class="fas fa-tint"></i> Humidity:</strong> ${rec.humidity}%<br>
-                                        <strong><i class="fas fa-cloud-rain"></i> Rain Level:</strong> ${rec.rain_level}<br>
-                                        <strong><i class="fas fa-layer-group"></i> Soil Type:</strong> ${rec.soil_type}<br>
-                                        <strong><i class="fas fa-flask"></i> pH:</strong> ${rec.ph}<br>
-                                        <strong><i class="fas fa-weight-hanging"></i> Yield:</strong> ${rec.yield} kg
+                                        <strong><i class="fas fa-apple-alt"></i> Apple Variety:</strong> ${rec.apple_variety}
                                     </p>
                                     <p class="similarity-score">
                                         <i class="fas fa-percentage"></i>
@@ -446,6 +441,23 @@
                     container.append(card);
                 });
             }
+
+            $('#notifyBtn').click(function() {
+                $.post('/send_notifications', function(data) {
+                    alert('Notification sent to: ' + data.contact + '\nStatus: ' + data.status);
+                    loadNotificationLog();
+                });
+            });
+            function loadNotificationLog() {
+                $.get('/get_notification_log', function(logs) {
+                    var logList = '';
+                    logs.forEach(function(log) {
+                        logList += `<li>${log.timestamp}: ${log.contact} - ${log.status} - ${log.message}</li>`;
+                    });
+                    $('#notificationLog').html(logList);
+                });
+            }
+            loadNotificationLog();
         });
 
         function toggleRecommendations(inputId) {
@@ -457,4 +469,4 @@
         }
     </script>
 </body>
-</html> 
+</html>

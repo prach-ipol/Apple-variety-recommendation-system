@@ -3,5 +3,4 @@ pandas==2.2.3
 numpy==1.26.4
 scikit-learn==1.3.2
 pymongo==4.11.3
-dnspython==2.7.0 
-twilio==8.10.0 
+dnspython==2.7.0
