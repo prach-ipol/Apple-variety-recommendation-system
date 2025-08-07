@@ -1,0 +1,53 @@
+[
+  {
+    "_id": "68919387f1cecec2049e97d1",
+    "temperature": 34.0,
+    "humidity": 45.0,
+    "rain_level": 75.0,
+    "ph": 7.0,
+    "soil_type": 4.0,
+    "timestamp": "2025-08-05T10:45:51.253000"
+  },
+  {
+    "_id": "689197255a7721ddd676b92a",
+    "temperature": 39.0,
+    "humidity": 45.0,
+    "rain_level": 75.0,
+    "ph": 7.0,
+    "soil_type": "black soil",
+    "timestamp": "2025-08-05T11:01:17.503000"
+  },
+  {
+    "_id": "68921e443edc1b8c3b23f687",
+    "temperature": 34.0,
+    "humidity": 40.0,
+    "rain_level": 50.0,
+    "ph": 7.0,
+    "nitrogen": 98.0,
+    "phosphorus": 54.0,
+    "potassium": 89.0,
+    "timestamp": "2025-08-05T20:37:48.248000"
+  },
+  {
+    "_id": "68921e8f3edc1b8c3b23f688",
+    "temperature": 45.0,
+    "humidity": 40.0,
+    "rain_level": 25.0,
+    "ph": 6.0,
+    "nitrogen": 70.0,
+    "phosphorus": 50.0,
+    "potassium": 67.0,
+    "timestamp": "2025-08-05T20:39:03.861000"
+  },
+  {
+    "_id": "68932a83b2dd424d30a22df3",
+    "temperature": 50.0,
+    "humidity": 60.0,
+    "rain_level": 25.0,
+    "ph": 8.0,
+    "nitrogen": 73.0,
+    "phosphorus": 46.0,
+    "potassium": 63.0,
+    "timestamp": "2025-08-06T15:42:19.411000"
+  }
+]

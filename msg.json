@@ -1,0 +1,9 @@
+[
+  {
+    "_id": "6891de8c743efbf6a0f9a2f1",
+    "contact": "9876543210",
+    "message": "Hello! This is a test notification from your Flask app.",
+    "timestamp": "2025-08-05T16:05:55.959000",
+    "status": "error: \n\u001b[31m\u001b[49mHTTP Error\u001b[0m \u001b[37m\u001b[49mYour request was:\u001b[0m\n\n\u001b[36m\u001b[49mPOST /Accounts/your_account_sid/Messages.json\u001b[0m\n\n\u001b[37m\u001b[49mTwilio returned the following information:\u001b[0m\n\n\u001b[34m\u001b[49mUnable to create record: Authentication Error - invalid username\u001b[0m\n\n\u001b[37m\u001b[49mMore information may be available here:\u001b[0m\n\n\u001b[34m\u001b[49mhttps://www.twilio.com/docs/errors/20003\u001b[0m\n\n"
+  }
+]

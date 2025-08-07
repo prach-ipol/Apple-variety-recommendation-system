@@ -18,7 +18,7 @@ print("Files in directory:", os.listdir())
 # MongoDB connection
 try:
     client = MongoClient('mongodb://localhost:27017/')
-    db = client['apple_farming']
+    db = client['farming']
     # Drop existing collection to ensure clean data
     db.drop_collection('farming_data')
     collection = db['farming_data']
@@ -101,16 +101,21 @@ def load_data_to_mongodb():
     try:
         print("Loading data into MongoDB...")
         # Read CSV file
-        df = pd.read_csv('dataset1.csv')
+        df = pd.read_csv('Crop_recommendation (2).csv')
         # Clean column names by removing extra spaces
         df.columns = df.columns.str.strip()
         print("Original columns:", df.columns.tolist())
         
-        # Convert rain level to numerical values
-        df['rain level'] = df['rain level'].apply(convert_rain_level)
+        # Rename columns to match our expected format
+        df = df.rename(columns={
+            'N': 'nitrogen',
+            'P': 'phosphorus', 
+            'K': 'potassium',
+            'rainfall': 'rain_level'
+        })
         
-        # Convert soil type to numerical values
-        df['soil type'] = df['soil type'].apply(convert_soil_type)
+        # Convert rain level to numerical values (if needed)
+        # The new dataset already has numerical rainfall values
         
         # Convert DataFrame to list of dictionaries
         records = df.to_dict('records')
@@ -149,10 +154,8 @@ def prepare_data():
         print("DataFrame shape:", df.shape)
         
         # Create a matrix of numerical features for similarity calculation
-        # Handle categorical soil type by converting to numerical
-        df['soil_type_encoded'] = df['soil type'].map({'loamy soil': 1, 'black soil': 2})
-        
-        numerical_features = ['temperature', 'humidity', 'rain level', 'ph', 'soil_type_encoded']
+        # Use the new crop dataset features
+        numerical_features = ['temperature', 'humidity', 'rain_level', 'ph', 'nitrogen', 'phosphorus', 'potassium']
         feature_matrix = df[numerical_features].values
         
         # Normalize the features
@@ -169,11 +172,8 @@ def save_user_input(input_data):
         # Add timestamp to input data
         input_data['timestamp'] = datetime.now()
         # Convert numeric values to float
-        for key in ['temperature', 'humidity', 'rain_level', 'ph']:
+        for key in ['temperature', 'humidity', 'rain_level', 'ph', 'nitrogen', 'phosphorus', 'potassium']:
             input_data[key] = float(input_data[key])
-        
-        # Convert soil type to categorical value
-        input_data['soil_type'] = convert_soil_type(input_data['soil_type'])
         
         # Save to MongoDB
         result = user_inputs.insert_one(input_data)
@@ -189,16 +189,15 @@ def get_recommendations(input_data, n_recommendations=3):
         print("Input data:", input_data)
         feature_matrix, df = prepare_data()
         
-        # Create input feature vector
-        # Convert soil type to numerical for similarity calculation
-        soil_type_encoded = 1 if convert_soil_type(input_data['soil_type']).lower() == 'loamy soil' else 2
-        
+        # Create input feature vector for crop recommendation
         input_features = np.array([
             float(input_data['temperature']),
             float(input_data['humidity']),
             float(input_data['rain_level']),
             float(input_data['ph']),
-            soil_type_encoded
+            float(input_data.get('nitrogen', 50)),  # Default values for missing features
+            float(input_data.get('phosphorus', 50)),
+            float(input_data.get('potassium', 50))
         ]).reshape(1, -1)
         
         # Normalize input features
@@ -215,17 +214,14 @@ def get_recommendations(input_data, n_recommendations=3):
             similarity_score = similarity_matrix[0][idx]
             row = df.iloc[idx]
             recommendations.append({
-                'state': row['State'],
-                'region': row['Region'],
-                'plant_variety': row['Plant variety'],
-                'apple_variety': row['Apple variety'],
-                'age': row['Age'],
+                'crop': row['label'],
                 'temperature': row['temperature'],
                 'humidity': row['humidity'],
-                'rain_level': row['rain level'],
-                'soil_type': convert_soil_type_to_string(row['soil type']),
+                'rain_level': row['rain_level'],
                 'ph': row['ph'],
-                'yield': row['apple yeild in first season'],
+                'nitrogen': row['nitrogen'],
+                'phosphorus': row['phosphorus'],
+                'potassium': row['potassium'],
                 'similarity': float(similarity_score)
             })
         
@@ -239,12 +235,11 @@ def get_recommendations(input_data, n_recommendations=3):
 def home():
     try:
         print("Loading home page...")
-        # Get unique states and regions from MongoDB
-        states = sorted(collection.distinct('State'))
-        regions = sorted(collection.distinct('Region'))
+        # Get unique crops from MongoDB
+        crops = sorted(collection.distinct('label'))
         
-        # Get unique soil types from MongoDB
-        soil_types = sorted(collection.distinct('soil type'))
+        # Get unique soil types (if any)
+        soil_types = ['Loamy soil', 'Black soil']  # Default soil types
         
         # Get some statistics about the dataset
         avg_temp = collection.aggregate([
@@ -258,8 +253,7 @@ def home():
         avg_humidity_value = round(avg_humidity['avg'], 1) if avg_humidity else 0
 
         stats = {
-            'total_states': len(states),
-            'total_regions': len(regions),
+            'total_crops': len(crops),
             'total_entries': collection.count_documents({}),
             'total_user_inputs': user_inputs.count_documents({}),
             'avg_temperature': avg_temp_value,
@@ -270,13 +264,12 @@ def home():
         recent_inputs = list(user_inputs.find().sort('timestamp', -1).limit(5))
         for input_data in recent_inputs:
             input_data['recommendations'] = get_recommendations(input_data)
-            # Convert soil type back to string for display
-            input_data['soil_type_display'] = convert_soil_type_to_string(input_data['soil_type'])
+            # No need to convert soil type for crop recommendations
+            pass
         
-        print(f"Found {len(states)} states and {len(regions)} regions")
+        print(f"Found {len(crops)} crops")
         return render_template('index.html', 
-                             states=states, 
-                             regions=regions,
+                             crops=crops,
                              soil_types=soil_types,
                              stats=stats,
                              recent_inputs=recent_inputs)
@@ -284,12 +277,10 @@ def home():
         print(f"Error loading home page: {e}")
         # Provide default values for all expected keys to avoid template errors
         return render_template('index.html', 
-                             states=['Error loading states'], 
-                             regions=['Error loading regions'],
+                             crops=['Error loading crops'],
                              soil_types=['Error loading soil types'],
                              stats={
-                                 'total_states': 0,
-                                 'total_regions': 0,
+                                 'total_crops': 0,
                                  'total_entries': 0,
                                  'total_user_inputs': 0,
                                  'avg_temperature': 0,
@@ -306,7 +297,9 @@ def recommend():
             'humidity': request.form['humidity'],
             'rain_level': request.form['rain_level'],
             'ph': request.form['ph'],
-            'soil_type': request.form['soil_type']
+            'nitrogen': request.form['nitrogen'],
+            'phosphorus': request.form['phosphorus'],
+            'potassium': request.form['potassium']
         }
         
         print(f"Received recommendation request with input data: {input_data}")
@@ -356,7 +349,7 @@ def get_saved_recommendations(input_id):
 @app.route('/send_notifications', methods=['POST'])
 def send_notifications():
     # Example: send a test notification to a hardcoded number
-    contact = '9876543210'  # Replace with dynamic logic as needed
+    contact = '8010489392'  # Replace with dynamic logic as needed
     message = 'Hello! This is a test notification from your Flask app.'
     status = send_sms_and_log(contact, message)
     return jsonify({'contact': contact, 'status': status})
