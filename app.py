@@ -233,8 +233,12 @@ def get_recommendations(input_data, n_recommendations=3):
 
 @app.route('/')
 def home():
+    return render_template('home.html')
+
+@app.route('/app')
+def app_page():
     try:
-        print("Loading home page...")
+        print("Loading app page...")
         # Get unique crops from MongoDB
         crops = sorted(collection.distinct('label'))
         
@@ -274,7 +278,7 @@ def home():
                              stats=stats,
                              recent_inputs=recent_inputs)
     except Exception as e:
-        print(f"Error loading home page: {e}")
+        print(f"Error loading app page: {e}")
         # Provide default values for all expected keys to avoid template errors
         return render_template('index.html', 
                              crops=['Error loading crops'],
@@ -349,7 +353,7 @@ def get_saved_recommendations(input_id):
 @app.route('/send_notifications', methods=['POST'])
 def send_notifications():
     # Example: send a test notification to a hardcoded number
-    contact = '8010489392'  # Replace with dynamic logic as needed
+    contact = '9175371207'  # Replace with dynamic logic as needed
     message = 'Hello! This is a test notification from your Flask app.'
     status = send_sms_and_log(contact, message)
     return jsonify({'contact': contact, 'status': status})
